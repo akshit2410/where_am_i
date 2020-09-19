@@ -1,4 +1,5 @@
-const express = require('express');  
+const express = require('express');
 const app = express();
-app.listen(5000,()=>console.log('listening to 5000'));
+const PORT = process.env.PORT||3000
+app.listen(PORT,()=>console.log('listening '));
 app.use(express.static('public'));
